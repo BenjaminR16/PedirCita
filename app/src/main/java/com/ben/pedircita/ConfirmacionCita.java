@@ -25,9 +25,11 @@ public class ConfirmacionCita extends AppCompatActivity {
         int hour = getIntent().getIntExtra("HOUR", 0);
         int minute = getIntent().getIntExtra("MINUTE", 0);
 
-        // Mostrar datos en un TextView
+
         TextView textView = findViewById(R.id.textoconfirmacion);
         textView.setText("DNI: " + dni + "\n" + "Fecha: " + day + "/" + month + "/" + year + "\n" + "Hora: " + String.format("%02d:%02d", hour, minute));
+
+
 
 
 
